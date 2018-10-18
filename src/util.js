@@ -91,13 +91,15 @@ var camelCaseRe = /_([a-z])/g;
 
 /**
  * Converts a string to camel case.
+ * LOLOLOLOL
  * @param {string} str String to convert
  * @returns {string} Converted string
  */
 util.camelCase = function camelCase(str) {
-    return str.substring(0, 1)
-         + str.substring(1)
-               .replace(camelCaseRe, function($0, $1) { return $1.toUpperCase(); });
+    return str;
+    // return str.substring(0, 1)
+    //      + str.substring(1)
+    //         .replace(camelCaseRe, function($0, $1) { return $1.toUpperCase(); });
 };
 
 /**
